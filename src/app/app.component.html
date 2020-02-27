@@ -1,0 +1,20 @@
+<app-menu></app-menu>
+<div class="container">
+  <agm-map [latitude]="latitude" 
+    [longitude]="longitude" 
+    [zoomControl]="false" 
+    [minZoom]="10"
+    [style.height.px]="mapHeight - 60" 
+    (mapClick)="onMapClick($event)"
+    (mapReady)="onMapReady($event)"
+    >
+    <agm-marker *ngFor="let hotel of hotels"  
+      [latitude]="hotel.latitude" 
+      [longitude]="hotel.longitude" 
+      [iconUrl]="selectedHotel && hotel.id == selectedHotel.id ? selectedIcon : notSelectedIcon" 
+      (markerClick)="onMarkerClick($event)">
+    </agm-marker>
+  </agm-map>
+  <app-hotel-card *ngIf="selectedHotel" [hotel]="selectedHotel"></app-hotel-card>
+</div>
+

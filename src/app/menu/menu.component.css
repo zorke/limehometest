@@ -1,0 +1,11 @@
+.menu {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+svg {
+    height: 30px;
+}
+

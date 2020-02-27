@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="main-part">
+        <div class="image">
+            <img [src]="hotel.imageUrl"/>
+        </div>
+        <div class="informations">
+            <h1>{{hotel.title}}</h1>
+            <h1>{{hotel.vicinity}}</h1>
+            <p class="description">{{hotel.description | uppercase}}</p>
+            <p class="price">{{hotel.price | currency:'GBP'}}</p>  
+        </div>
+    </div>
+
+    <button class="btn">Book</button>
+</div>
