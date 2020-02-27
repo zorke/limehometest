@@ -445,9 +445,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     AppConstants.GOOGLE_MAP_API_KEY = "AIzaSyDMGzPdwgMsPi-DzsMMK9yGbhcWc9D0XTk";
     AppConstants.HERE_API_KEY = "csDH0TO8mFfDCdS-xwcPcWNocv7d9bRGoF-8fXtWb10";
-    AppConstants.DEFAULT_LONGITUDE = 52.00;
-    AppConstants.DEFAULT_LATITUDE = 8.5;
-    AppConstants.MENU_HEIGHT = 60;
     /***/
   },
 
@@ -638,20 +635,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _constants_app_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ../constants/app.constants */
-    "./src/app/constants/app.constants.ts");
 
     var MenuComponent =
     /*#__PURE__*/
     function () {
       function MenuComponent() {
         _classCallCheck(this, MenuComponent);
-
-        this.height = _constants_app_constants__WEBPACK_IMPORTED_MODULE_1__["AppConstants"].MENU_HEIGHT;
       }
 
       _createClass(MenuComponent, [{

@@ -8,8 +8,6 @@ import { AppConstants } from '../constants/app.constants';
 })
 export class MenuComponent implements OnInit {
 
-  height = AppConstants.MENU_HEIGHT;
-
   constructor() { }
 
   ngOnInit(): void {
